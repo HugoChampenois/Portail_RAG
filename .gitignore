@@ -1,0 +1,17 @@
+# ===== Environnement Python =====
+venv/
+__pycache__/
+*.py[cod]
+*.pyo
+
+# ===== Données générées au runtime =====
+# index.db : index SQLite (régénérable via build_index.py / build_extras.py)
+# favorites.json : favoris utilisateur (persistants)
+# llm_config.json : configuration du LLM (peut contenir une clé API)
+data/*
+!data/README.md
+
+# ===== Secrets (jamais versionnés) =====
+.env
+*.token
+.git-credentials
